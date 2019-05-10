@@ -109,3 +109,63 @@ my height = 58
 MYLONG = 40
 MyLat = 105
 Though the last two of these would work in python, they are not pythonic ways to name variables. The way we name variables is called snake case, because we tend to connect the words with underscores.
+
+**7. Integers and Float**
+
+Integers and Floats
+There are two Python data types that could be used for numeric values:
+
+* int - for integer values
+* float - for decimal or floating point values
+You can create a value that follows the data type by using the following syntax:
+
+x = int(4.7)   # x is now an integer 4
+y = float(4)   # y is now a float of 4.0
+You can check the type by using the type function:
+
+>>> print(type(x))
+int
+>>> print(type(y))
+float
+Because the float, or approximation, for 0.1 is actually slightly more than 0.1, when we add several of them together we can see the difference between the mathematically correct answer and the one that Python creates.
+
+>>> print(.1 + .1 + .1 == .3)
+False
+ 
+___
+
+Code style in Python use PEP8 Guidelines 
+
+* Keep lines of code between 79-99 characters long
+* add spaces correctly to make code more readable 
+
+
+In general, there are two types of errors to look out for
+
+* Exceptions
+* Syntax
+
+An Exception is a problem that occurs when the code is running, but a 'Syntax Error' is a problem detected when Python checks the code before it runs it.
+
+10. Booleans, Comparison operators, and Logical Operators 
+Booleans, Comparison Operators, and Logical Operators
+The bool data type holds one of the values True or False, which are often encoded as 1 or 0, respectively.
+
+There are 6 comparison operators that are common to see in order to obtain a bool value:
+
+Comparison Operators
+Symbol Use Case Bool    Operation
+5 < 3   False   Less Than
+5 > 3   True    Greater Than
+3 <= 3  True    Less Than or Equal To
+3 >= 5  False   Greater Than or Equal To
+3 == 5  False   Equal To
+3 != 5  True    Not Equal To
+And there are three logical operators you need to be familiar with:
+
+Logical Use Bool    Operation
+5 < 3 and 5 == 5    False   and - Evaluates if all provided statements are True
+5 < 3 or 5 == 5 True    or - Evaluates if at least one of many statements is True
+not 5 < 3   True    not - Flips the Bool Value
+
+
