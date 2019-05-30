@@ -7,7 +7,7 @@ Course outline:
 * Built-In Functions, Type Conversion 
 * Whitespace and Style Guidelines
 
-2. Arithemetic Operators
+## 2. Arithemetic Operators
 
 * '+' Addition 
 * '-' Subtraction 
@@ -75,7 +75,7 @@ One more point: Python allows operator overloading, so some classes may be writt
 
 ___
 
-5. Variables and Assignment Operators 
+## 5. Variables and Assignment Operators 
 
 **Variables I**
 
@@ -110,13 +110,13 @@ MYLONG = 40
 MyLat = 105
 Though the last two of these would work in python, they are not pythonic ways to name variables. The way we name variables is called snake case, because we tend to connect the words with underscores.
 
-**7. Integers and Float**
+## 8. Integers and Float
 
 Integers and Floats
 There are two Python data types that could be used for numeric values:
 
-* int - for integer values
-* float - for decimal or floating point values
+* int - for integer values (whole numbers ex. 4)
+* float - for decimal or floating point values (decimals ex. 4.0)
 You can create a value that follows the data type by using the following syntax:
 
 x = int(4.7)   # x is now an integer 4
@@ -136,6 +136,7 @@ ___
 
 Code style in Python use PEP8 Guidelines 
 
+For Best practices, see [PEP8 Guidlines](https://www.python.org/dev/peps/pep-0008/)
 * Keep lines of code between 79-99 characters long
 * add spaces correctly to make code more readable 
 
@@ -145,27 +146,38 @@ In general, there are two types of errors to look out for
 * Exceptions
 * Syntax
 
-An Exception is a problem that occurs when the code is running, but a 'Syntax Error' is a problem detected when Python checks the code before it runs it.
+An **Exception** is a problem that occurs when the code is running, but a 'Syntax Error' is a problem detected when Python checks the code before it runs it.
+ For more details see [Python Tutorial on Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
 
-10. Booleans, Comparison operators, and Logical Operators 
-Booleans, Comparison Operators, and Logical Operators
+___
+
+## 10. Booleans, Comparison operators, and Logical Operators
+
+**Booleans, Comparison Operators, and Logical** 
+
 The bool data type holds one of the values True or False, which are often encoded as 1 or 0, respectively.
+
+--> Boolean algebra is named for its inventor Goerge Bool. 
 
 There are 6 comparison operators that are common to see in order to obtain a bool value:
 
-Comparison Operators
-Symbol Use Case Bool    Operation
-5 < 3   False   Less Than
-5 > 3   True    Greater Than
-3 <= 3  True    Less Than or Equal To
-3 >= 5  False   Greater Than or Equal To
-3 == 5  False   Equal To
-3 != 5  True    Not Equal To
+**Comparison Operators**
+
+|Symbol Use Case| Bool    |Operation                |
+|---------------|:-------:|------------------------:|
+| 5 < 3         | False   | Less Than               |
+| 5 > 3         | True    | Greater Than            |
+| 3 <= 3        | True    | Less Than or Equal To   |
+| 3 >= 5        | False   | Greater Than or Equal To|
+| 3 == 5        | False   | Equal To                |
+| 3 != 5        | True    | Not Equal To            |
+
 And there are three logical operators you need to be familiar with:
 
-Logical Use Bool    Operation
-5 < 3 and 5 == 5    False   and - Evaluates if all provided statements are True
-5 < 3 or 5 == 5 True    or - Evaluates if at least one of many statements is True
-not 5 < 3   True    not - Flips the Bool Value
+|Logical Use| Bool  | Operation                                             | 
+| ----------|:-----:| ------------------------------------------------------|
+| 5 < 3 'and' 5 == 5| False|'and' - Evaluates if all provided statements are True|
+|5 < 3 'or' 5 == 5| True | 'or' - Evaluates if at least one of many statements is True|
+|'not' 5 < 3|  True|   'not' - Flips the Bool Value|
 
 
