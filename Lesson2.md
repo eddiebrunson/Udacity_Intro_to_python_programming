@@ -26,7 +26,7 @@ Python follows the usual order or operations: PEMDAS
 
 ___
 
-FAQ: What do the operators <<, >>, &, |, ~, and ^ do?
+FAQ: What do the operators '<<', '>>', '&', '|', '~', 'and' '^' do?
 
 These are **Python's bitwise** operators.
 
@@ -36,16 +36,16 @@ All of these operators share something in common -- they are "bitwise" operators
 
 Two's Complement binary for Positive Integers:
 
-0 is written as "0"
-1 is written as "1"
-2 is written as "10"
-3 is "11"
-4 is "100"
-5 is "101"
-.
-.
-1029 is "10000000101" == 2**10 + 2**2 + 2**0 == 1024 + 4 + 1
-Two's Complement binary for Negative Integers:
+* 0 is written as "0"
+*1 is written as "1"
+* 2 is written as "10"
+* 3 is "11"
+* 4 is "100"
+* 5 is "101"
+* .
+* .
+* 1029 is "10000000101" == 2**10 + 2**2 + 2**0 == 1024 + 4 + 1
+* Two's Complement binary for Negative Integers:
 
 Negative numbers are written with a leading one instead of a leading zero. So if you are using only 8 bits for your twos-complement numbers, then you treat patterns from "00000000" to "01111111" as the whole numbers from 0 to 127, and reserve "1xxxxxxx" for writing negative numbers. A negative number, -x, is written using the bit pattern for (x-1) with all of the bits complemented (switched from 1 to 0 or 0 to 1). So -1 is complement(1 - 1) = complement(0) = "11111111", and -10 is complement(10 - 1) = complement(9) = complement("00001001") = "11110110". This means that negative numbers go all the way down to -128 ("10000000").
 
@@ -53,23 +53,35 @@ Of course, Python doesn't use 8-bit numbers. It USED to use however many bits we
 
 Whew! With that preamble out of the way (and hey, you probably knew this already), the operators are easy to explain:
 
-The Operators:
+**The Operators:**
 
-x << y
-Returns x with the bits shifted to the left by y places (and new bits on the right-hand-side are zeros). This is the same as multiplying x by 2**y.
-x >> y
-Returns x with the bits shifted to the right by y places. This is the same as //'ing x by 2**y.
-x & y
-Does a "bitwise and". Each bit of the output is 1 if the corresponding bit of x AND of y is 1, otherwise it's 0.
-x | y
-Does a "bitwise or". Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.
-~ x
+`x << y`
+
+* Returns x with the bits shifted to the left by y places (and new bits on the right-hand-side are zeros). This is the same as multiplying x by 2**y.
+
+`x >> y`
+
+* Returns x with the bits shifted to the right by y places. This is the same as //'ing x by 2**y.
+
+`x & y`
+
+* Does a "bitwise and". Each bit of the output is 1 if the corresponding bit of x AND of y is 1, otherwise it's 0.
+
+`x | y`
+
+* Does a "bitwise or". Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.
+
+* `~ x`
+
 Returns the complement of x - the number you get by switching each 1 for a 0 and each 0 for a 1. This is the same as -x - 1.
-x ^ y
+
+`x ^ y`
+
 Does a "bitwise exclusive or". Each bit of the output is the same as the corresponding bit in x if that bit in y is 0, and it's the complement of the bit in x if that bit in y is 1.
+
 Just remember about that infinite series of 1 bits in a negative number, and these should all make sense.
 
-Other Classes
+**Other Classes**
 
 One more point: Python allows operator overloading, so some classes may be written to allow the bitwise operators, but with some other meaning. For instance, the new sets module for Python 2.3 uses | and & for union and intersection.
 
@@ -82,7 +94,7 @@ ___
 Variables I
 Variables are used all the time in Python! Below is the example you saw in the video where we performed the following:
 
-mv_population = 74728
+`mv_population = 74728`
 
 Here mv_population is a variable, which holds the value of 74728. This assigns the item on the right to the name on the left, which is actually a little different than mathematical equality, as 74728 does not hold the value of mv_population.
 
@@ -98,16 +110,19 @@ Besides writing variable names that are descriptive, there are a few things to w
 
 3. The pythonic way to name variables is to use all lowercase letters and underscores to separate words.
 
-YES
-
+* YES
+```Python
 my_height = 58
 my_lat = 40
 my_long = 105
-NO
-
+```
+* NO
+```Python
 my height = 58
 MYLONG = 40
 MyLat = 105
+```
+
 Though the last two of these would work in python, they are not pythonic ways to name variables. The way we name variables is called snake case, because we tend to connect the words with underscores.
 
 ## 8. Integers and Float
@@ -122,16 +137,17 @@ You can create a value that follows the data type by using the following syntax:
 x = int(4.7)   # x is now an integer 4
 y = float(4)   # y is now a float of 4.0
 You can check the type by using the type function:
-
+```Python
 >>> print(type(x))
 int
 >>> print(type(y))
 float
+```
 Because the float, or approximation, for 0.1 is actually slightly more than 0.1, when we add several of them together we can see the difference between the mathematically correct answer and the one that Python creates.
-
+```Python
 >>> print(.1 + .1 + .1 == .3)
 False
- 
+``` 
 ___
 
 Code style in Python use PEP8 Guidelines 
