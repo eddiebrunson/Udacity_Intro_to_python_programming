@@ -220,4 +220,83 @@ else:
     print (False)
 ```
 ## 13. Strings
- String 
+
+**String Methods**
+
+**Methods** are like some of the some of the following **functions**:
+
+1. `len`("this")
+2. `type`(12) 
+3. `print`("Hello wordl")
+
+These three above are **functions** - notice they use parentheses, and accept one or more **arguments**. 
+
+A **method** in Python behaves similarly to a function. Methods actually are functions that are colled using dot notation. For example, `lower()` is a string method that can be used like this, on a string called "sample string": `sample_string.lower()`.
+
+Methods are specific to the datat type for a particular variable. So there are some built0in methods that are available for all strings, different methods that are available for all integers, etc. 
+
+Examples of methods that are possible with any string:
+
+```Python
+
+my_string = "sebastian thrun"
+
+my_string.
+|capitalize()| encode()| format()| isalpha()| islower()| istitle()|
+|casefold()| endswith()| format_map()| isdecimal()| isnumeric()| isupper()|
+|center()| expandtabs()| index()| isdigit()| isprintable()| join()|
+|count()| find()| isalnum()| isidentifier()|  isspace()| 1just()|
+```
+Each of the above methods accepts the string itself as the first argument of the method. However, they also could receive additional arguments, that are passed inside the parentheses. For example: 
+
+```Python 
+
+>>> my_string.islower()
+>>> True
+>>> my_string.count('a')
+>>> 2
+>>> my_string.find('a')
+>>> 3
+```
+
+The `count` and `find` methods both take another argument. However, the `.islower()` method does not accept another argument. 
+
+No professional has all the methods memorized, which is why understanding how to use documentation and find answers is so important. Gaining a string grasp of the foundations of programming will allow you to use those foundations to use documentation to build so much more than someone who tries to memorize all the built-in methods in Python. 
+
+**One important method: `format(`
+
+Usually found in `print` statements. 
+
+For example:
+
+Example 1
+
+`print("Mohammed has {} balloons."format(27))`
+
+Example 1 Output
+
+`Mohammed has 27 balloons`
+
+Example 2
+
+```Python 
+
+animal = "dog"
+aciton = "bite"
+print("Does your {} {}?".format(animal, action))
+```
+Example 2 Output 
+
+`Does your dog bite?`
+
+Example 3 
+`maria_string = "Maria loves {} and {}"`
+`print(maria_string.format("math, "statistics"))`
+
+Example 3 Output
+
+`Maria loves math and statistics`
+
+
+
+
