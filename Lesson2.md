@@ -26,7 +26,7 @@ Python follows the usual order or operations: PEMDAS
 
 ___
 
-FAQ: What do the operators '<<', '>>', '&', '|', '~', 'and' '^' do?
+FAQ: What do the operators `<<, >>, &, |, ~, and ^ do?`
 
 These are **Python's bitwise** operators.
 
@@ -71,7 +71,7 @@ Whew! With that preamble out of the way (and hey, you probably knew this already
 
 * Does a "bitwise or". Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.
 
-* `~ x`
+`~ x`
 
 Returns the complement of x - the number you get by switching each 1 for a 0 and each 0 for a 1. This is the same as -x - 1.
 
@@ -196,4 +196,28 @@ And there are three logical operators you need to be familiar with:
 |5 < 3 'or' 5 == 5| True | 'or' - Evaluates if at least one of many statements is True|
 |'not' 5 < 3|  True|   'not' - Flips the Bool Value|
 
+11. Quiz: Which is denser, Rio or San Francisco?
 
+```Python 
+sf_population, sf_area = 864816, 231.89
+rio_population, rio_area = 6453682, 486.5
+
+san_francisco_pop_density = sf_population/sf_area
+rio_de_janeiro_pop_density = rio_population/rio_area
+
+# Write code that prints True if San Francisco is denser than Rio, and False otherwise
+
+print(san_francisco_pop_density > rio_de_janeiro_pop_density)
+
+False
+```
+or, but the above is more simplier to write!!!
+
+```Python
+if (san_francisco_pop_density > rio_de_janeiro_pop_density):
+    print (True)
+else:
+    print (False)
+```
+## 13. Strings
+ String 
