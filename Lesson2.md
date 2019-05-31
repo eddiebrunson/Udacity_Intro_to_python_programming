@@ -252,11 +252,11 @@ Each of the above methods accepts the string itself as the first argument of the
 ```Python 
 
 >>> my_string.islower()
->>> True
+True
 >>> my_string.count('a')
->>> 2
+2
 >>> my_string.find('a')
->>> 3
+3
 ```
 
 The `count` and `find` methods both take another argument. However, the `.islower()` method does not accept another argument. 
@@ -269,15 +269,15 @@ Usually found in `print` statements.
 
 For example:
 
-Example 1
+**Example 1**
 
 `print("Mohammed has {} balloons."format(27))`
 
-Example 1 Output
+**Example 1 Output**
 
 `Mohammed has 27 balloons`
 
-Example 2
+**Example 2**
 
 ```Python 
 
@@ -285,15 +285,17 @@ animal = "dog"
 aciton = "bite"
 print("Does your {} {}?".format(animal, action))
 ```
-Example 2 Output 
+**Example 2 Output**
 
 `Does your dog bite?`
 
-Example 3 
-`maria_string = "Maria loves {} and {}"`
-`print(maria_string.format("math, "statistics"))`
+**Example 3**
+```Python
+maria_string = "Maria loves {} and {}"
+print(maria_string.format("math, "statistics"))
+```
 
-Example 3 Output
+**Example 3 Output**
 
 `Maria loves math and statistics`
 
